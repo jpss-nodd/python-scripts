@@ -306,7 +306,7 @@ def create_monthly_names(satellite, date_generated):
             if satellite == 'both':
                 sat_list = ['snpp', 'noaa20']
                 for sat_name in sat_list:
-                    file_name = 'viirs_aod_monthly_' + sat_name + '_0.250_' + year_month + '_nrt.nc'
+                    file_name = 'viirs_aod_monthly_' + sat_name + '_0.250_deg_' + year_month + '_nrt.nc'
                     url = 'https://www.star.nesdis.noaa.gov/pub/smcd/VIIRS_Aerosol/viirs_aerosol_gridded_data/' + sat_name + '/aod_monthly/'
                     # Check if file exists
                     status = file_exists(url + file_name)
@@ -316,7 +316,7 @@ def create_monthly_names(satellite, date_generated):
                         missing = str(sat_name) + '_' + str(year_month)
                         no_file_list.append(missing)
             else:
-                file_name = 'viirs_aod_monthly_' + satellite + '_0.250_' + year_month + '_nrt.nc'
+                file_name = 'viirs_aod_monthly_' + satellite + '_0.250_deg_' + year_month + '_nrt.nc'
                 url = 'https://www.star.nesdis.noaa.gov/pub/smcd/VIIRS_Aerosol/viirs_aerosol_gridded_data/' + satellite + '/aod_monthly/'
                 # Check if file exists
                 status = file_exists(url + file_name)
