@@ -18,8 +18,8 @@ the most recent version of the Enterprise Processing System (EPS) AOD
 algorithm, providing a consistent AOD dataset for long-term analysis.
 
 REPROCESSED VIIRS GRIDDED AOD data availablity:
-SNPP: 2012-2021
-NOAA-20: 2018-2021
+SNPP: 2012-2020
+NOAA-20: 2018-2020
 
 Version history:
 v1 (Aug 15 2023): initial release
