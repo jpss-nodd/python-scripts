@@ -371,7 +371,7 @@ def get_files(date_generated, satellite, data_resolution, averaging_time, save_p
     if len(file_list) > 0:
         # Print information about download
         print('\nTotal number of available files:', str(len(file_list)))
-        print('Approximate total size of download: ',  int(total_size/1.0E6), ' MB', sep='')
+        print('Approximate total size of download: ',  int(total_size/1.024E6), ' MB', sep='')
         print('\nData files will be saved to:', save_path)
         
         # Ask user if they want to download the available data files
